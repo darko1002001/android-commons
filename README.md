@@ -26,7 +26,7 @@ The minimum API version is set to 11 because of FragmentUtils
     <groupId>com.aranea-apps.android.libs</groupId>
     <artifactId>android-commons</artifactId>
     <version>1.0.0</version>
-    <type>pom</type>
+    <type>aar</type>
 </dependency>
 ```
 
