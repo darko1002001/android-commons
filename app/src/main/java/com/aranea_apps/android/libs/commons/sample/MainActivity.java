@@ -20,6 +20,7 @@ public class MainActivity extends ActionBarActivity {
     PreferenceUtil.getRememberMePreference().set(!PreferenceUtil.getRememberMePreference().get());
 
 
+    // Log variable number separate objects or strings with he same log method
     ALog.d("Hello", "World", "Bla");
   }
 
