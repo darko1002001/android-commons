@@ -32,7 +32,7 @@ The minimum API version is set to 11 because of FragmentUtils
 
 ### As Gradle dependency
 
-```java
+```
 dependencies {
     compile 'info.metadude.android:typed-preferences:2.0.0'
 }
