@@ -8,6 +8,9 @@ public class BaseNotificationUtil {
 
   private static Toast toast;
 
+  public static void makeSingleShowToast(int resId) {
+    makeSingleShowToast(Commons.getContext().getString(resId));
+  }
   public static void makeSingleShowToast(String message) {
     if (toast != null) {
       toast.cancel();
