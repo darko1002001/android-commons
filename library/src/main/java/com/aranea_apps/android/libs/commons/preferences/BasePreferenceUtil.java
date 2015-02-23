@@ -81,4 +81,12 @@ public class BasePreferenceUtil {
     return new FloatPreference(prefs, key);
   }
 
+  public static <T> ModelPreference<T> modelPreference(String key, Class cls) {
+    return new ModelPreference<T>(prefs, key, cls);
+  }
+
+  public static <T> ListPreference<T> listPreference(String key, Class cls) {
+    return new ListPreference<T>(prefs, key, cls);
+  }
+
 }
