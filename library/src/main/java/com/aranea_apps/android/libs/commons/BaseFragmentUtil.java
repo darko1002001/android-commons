@@ -73,8 +73,14 @@ public class BaseFragmentUtil {
     try {
       removeDialogFragment(ProgressDialogFragment.TAG, manager);
     } catch (Exception e) {
+      // Ignore this might happen very rarely in some transitional states
     }
   }
+
+  public static void clearProgressDialog(Activity activity) {
+    clearProgressDialog(activity.getFragmentManager());
+  }
+
 
   public static void replaceFragment(FragmentManager manager, int parent,
                                      Fragment fragment) {

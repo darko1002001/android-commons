@@ -18,6 +18,8 @@ public class MainActivity extends ActionBarActivity {
     setContentView(R.layout.activity_main);
     BaseNotificationUtil.makeSingleShowToast("Hello " + PreferenceUtil.getRememberMePreference().get());
     PreferenceUtil.getRememberMePreference().set(!PreferenceUtil.getRememberMePreference().get());
+
+
     PreferenceUtil.modelPreference("test_model", TestModel.class).set(new TestModel("darko", "G"));
 
     ListPreference<TestModel> testList = PreferenceUtil.listPreference("test_list", TestModel.class);

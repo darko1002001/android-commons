@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 
 public class TextUtil {
 
-  public static void setupClickableSpan(TextView textView, String textToMark, ClickableSpan clickableSpan) {
+  public static void setupClickableSpan(TextView textView, String textToMark, ClickableSpan clickableSpan, int color) {
     String source = textView.getText().toString();
     SpannableString ss = new SpannableString(source);
 
@@ -31,7 +31,7 @@ public class TextUtil {
     ss.setSpan(clickableSpan, termStart, termStop, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
     //we set here our color
-    ss.setSpan(new ForegroundColorSpan(textView.getContext().getResources().getColor(R.color.c_underline)),
+    ss.setSpan(new ForegroundColorSpan(color),
       termStart, termStop, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
     //we set here text to be underline
